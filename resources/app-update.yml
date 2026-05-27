@@ -1,0 +1,4 @@
+provider: github
+owner: Hamoex
+repo: AIProject
+updaterCacheDirName: ai-elite-updater
