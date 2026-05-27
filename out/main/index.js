@@ -1351,7 +1351,7 @@ function registerGmailHandlers(ipcMain) {
       const messages = res.data.messages || [];
       const prefix = isNewLogin ? "[SYSTEM NOTICE: Gmail Login was just completed successfully. Tell the user this before reading the emails.]\n\n" : "";
       if (!messages.length) return { speechText: prefix + "📭 Inbox is empty.", uiData: [] };
-      let emailListForIris = [];
+      let emailListForElite = [];
       let uiDataArray = [];
       for (const msg of messages) {
         const fullMsg = await gmail.users.messages.get({ userId: "me", id: msg.id });
@@ -1361,7 +1361,7 @@ function registerGmailHandlers(ipcMain) {
         const date = headers.find((h) => h.name === "Date")?.value || "";
         const snippet = fullMsg.data.snippet;
         const parsed = parseMessageParts(fullMsg.data.payload);
-        emailListForIris.push(`📧 From: ${from}
+        emailListForElite.push(`📧 From: ${from}
 Subject: ${subject}
 Preview: ${snippet}
 `);
@@ -1376,7 +1376,7 @@ Preview: ${snippet}
         });
       }
       return {
-        speechText: prefix + emailListForIris.join("\n---\n"),
+        speechText: prefix + emailListForElite.join("\n---\n"),
         uiData: uiDataArray
       };
     } catch (e) {
@@ -2041,7 +2041,7 @@ function registerRealityHacker(ipcMain) {
     }
   });
 }
-function registerIrisCoder({ ipcMain, app }) {
+function registerEliteCoder({ ipcMain, app }) {
   const PROJECTS_DIR = path.resolve(app.getPath("userData"), "Projects");
   if (!fs.existsSync(PROJECTS_DIR)) fs.mkdirSync(PROJECTS_DIR, { recursive: true });
   ipcMain.handle("start-live-coding", async (event, { prompt, filename, geminiKey }) => {
@@ -3734,7 +3734,7 @@ electron.app.whenReady().then(() => {
   registerBreakingNews(electron.ipcMain);
   registerPermanentMemory({ ipcMain: electron.ipcMain, app: electron.app });
   registerTelekinesis({ ipcMain: electron.ipcMain });
-  registerIrisCoder({ ipcMain: electron.ipcMain, app: electron.app });
+  registerEliteCoder({ ipcMain: electron.ipcMain, app: electron.app });
   registerRealityHacker(electron.ipcMain);
   registerAdbHandlers(electron.ipcMain);
   registerLocationHandlers(electron.ipcMain);

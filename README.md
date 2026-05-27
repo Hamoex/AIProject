@@ -8,6 +8,14 @@
 
 <br>
 
+<!-- Animated typing effect -->
+<a href="https://github.com/Hamoex/AIProject">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=AI+Elite+is+not+a+chatbot.+;It+is+a+neural+extension+of+your+OS." alt="Typing SVG" />
+</a>
+
+<br><br>
+
+<!-- Badges -->
 <a href="https://github.com/Hamoex/AIProject/stargazers">
   <img src="https://img.shields.io/github/stars/Hamoex/AIProject?style=for-the-badge&color=06b6d4&logo=github&logoColor=white" alt="stars" />
 </a>
@@ -26,17 +34,18 @@
 <a href="LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-06b6d4?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="license" />
 </a>
+<a href="https://github.com/Hamoex/AIProject">
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="windows" />
+</a>
 
 <br><br>
 
 **A local-first AI Operating System layer that turns intent into real OS actions.**
 
-*Speak your command. AI Elite executes it.*
-
 <br>
 
 <a href="https://github.com/Hamoex/AIProject/releases/latest">
-  <img src="https://img.shields.io/badge/⬇️_Download_Latest-101010?style=for-the-badge&color=06b6d4&logo=windows&logoColor=white" alt="download" />
+  <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F_Download_Latest-101010?style=for-the-badge&color=06b6d4&logo=windows&logoColor=white" alt="download" />
 </a>
 
 ---
@@ -56,7 +65,6 @@
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [Roadmap](#roadmap)
-- [Disclaimer](#disclaimer)
 - [Author](#author)
 - [License](#license)
 
@@ -67,6 +75,11 @@
 AI Elite is not a chatbot. It is a **local-first AI Operating System layer** that executes real-world actions across your system, applications, and devices.
 
 > No mouse. No keyboard. Just voice and intent.
+
+<!-- Activity graph -->
+<br>
+
+[![AI Elite Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Hamoex&repo=AIProject&bg_color=0d1117&color=06b6d4&line=06b6d4&point=ffffff&area=true&area_color=06b6d4&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ---
 
@@ -217,27 +230,36 @@ AI Elite is not a chatbot. It is a **local-first AI Operating System layer** tha
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Desktop | Electron + Vite |
-| Frontend | React 19, Tailwind CSS v4, Framer Motion, GSAP |
-| 3D | Three.js, React Three Fiber |
-| State | Zustand |
-| AI | Google Gemini, Groq SDK, Hugging Face |
-| Vector DB | LanceDB |
-| Automation | Nut.js, Puppeteer, Tesseract.js |
-| Auth | Google OAuth 2.0, bcrypt, OS keychain |
-| Notifications | GNews API |
+<div align="center">
+
+![Electron](https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![LanceDB](https://img.shields.io/badge/LanceDB-000000?style=for-the-badge&logo=data&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+
+</div>
 
 ---
 
 ## Security
 
-- **100% BYOK** — Bring Your Own Key
-- **Local encryption** via OS keychain (safeStorage)
-- **Zero-trust architecture** — no external key storage
-- **Biometric vault** with face-api.js recognition
-- **PIN lockdown** with bcrypt hashing
+<div align="center">
+
+| | Feature |
+|---|---|
+| :closed_lock_with_key: | **100% BYOK** — Bring Your Own Key |
+| :lock: | **Local encryption** via OS keychain (safeStorage) |
+| :shield: | **Zero-trust architecture** — no external key storage |
+| :face_with_monocle: | **Biometric vault** with face-api.js recognition |
+| :key: | **PIN lockdown** with bcrypt hashing |
+
+</div>
 
 ---
 
@@ -246,7 +268,7 @@ AI Elite is not a chatbot. It is a **local-first AI Operating System layer** tha
 ### Download (Recommended)
 
 <a href="https://github.com/Hamoex/AIProject/releases/latest">
-  <img src="https://img.shields.io/badge/⬇️_Download_for_Windows-101010?style=for-the-badge&color=06b6d4&logo=windows&logoColor=white" alt="download" />
+  <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F_Download_for_Windows-101010?style=for-the-badge&color=06b6d4&logo=windows&logoColor=white" alt="download" />
 </a>
 
 1. Download the latest `Ai Elite H Setup x.x.x.exe` from [Releases](https://github.com/Hamoex/AIProject/releases/latest)
@@ -320,10 +342,9 @@ AIProject/
 ├── resources/              # App icons & auto-update config
 │   ├── app-update.yml      # GitHub auto-update settings
 │   └── icon.ico            # Application icon
-├── release/                # Build output (installers)
+├── release/                # Build output
+│   └── latest.yml          # Auto-update manifest
 ├── assets/                 # Banner images
-├── afterPack.js            # Post-build hook
-├── build-protected.js      # Build script
 ├── package.json            # Dependencies & electron-builder config
 └── eng.traineddata         # Tesseract OCR language data
 ```
@@ -347,6 +368,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 - [x] Voice-first execution
 - [x] Breaking News integration
 - [x] Auto-update via GitHub
+- [x] Windows Defender exclusion in installer
+- [x] Google OAuth protocol fix
 - [ ] Plugin marketplace
 - [ ] Memory graph
 - [ ] Multi-agent system
@@ -354,17 +377,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 ---
 
-## Disclaimer
-
-AI Elite has deep system-level execution capabilities. Use responsibly. The maintainers are not liable for misuse.
-
----
-
 ## Author
 
 **Hamoex**
 
-- GitHub: [@Hamoex](https://github.com/Hamoex)
+![GitHub followers](https://img.shields.io/github/followers/Hamoex?style=for-the-badge&color=06b6d4&logo=github&logoColor=white)
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hamoex)
 
 ---
 
@@ -372,7 +391,14 @@ AI Elite has deep system-level execution capabilities. Use responsibly. The main
 
 MIT License — see [LICENSE](LICENSE).
 
+<br>
+
 <div align="center">
+
+<!-- Visitor counter -->
+<img src="https://komarev.com/ghpvc/?username=Hamoex&repo=AIProject&color=06b6d4&style=for-the-badge&label=Profile+Views" alt="profile views" />
+
+<br><br>
 
 **AI Elite is not a chatbot. It is a neural extension of your operating system.**
 
